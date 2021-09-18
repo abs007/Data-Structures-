@@ -65,7 +65,7 @@ class bst:
             return True
         elif value<curr_node.data and curr_node.left:
             return self._search(curr_node.left,value)
-        elif value>curr_node.data and curr_ndoe.right:
+        elif value>curr_node.data and curr_node.right:
             return self._search(curr_node.right,value)
         return False
     
@@ -97,4 +97,17 @@ class bst:
         
         
         
-        #
+       ### Example test cases ###
+        
+    t1= bst(10)
+    t1.insert(8)
+    t1.insert(9)
+    t1.height()
+>>> 3
+
+    t1.search(10)
+>>> True
+ 
+    t1.search(65)
+>>> False
+
